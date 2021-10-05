@@ -825,7 +825,6 @@ textarea:focus {
     max-width: 390px;
     padding: 0 0 12px 12px;
     position: relative;
-    outline: 1px solid red;
 }
 
 .img_wrapp:before {
