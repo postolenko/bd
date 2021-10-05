@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1800px) {
+
+.header_templ {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header_templ > .left_col {
+	display: none;
+}
+
+.header_templ > .center_col {
+	width: 100%;
+}
+
+.header_templ > .right_col {
+	display: none;
+}
+
+.header_templ > .center_col .row {
+    padding: 0 25px;
+}
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	
+}
