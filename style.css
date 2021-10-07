@@ -964,6 +964,10 @@ textarea:focus {
 
 /*-- Section 2 - Main Page --*/
 
+.sect_2_mp {
+    padding-top: 79px;
+}
+
 .cards_slider {
     margin: 0 -15px;
 }
