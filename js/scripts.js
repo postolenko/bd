@@ -146,4 +146,68 @@ $(document).ready(function() {
       });
     }
 
+  // -- Range Slider
+
+    if( document.getElementById("range_sl") ) {
+        priceSlider2 = document.getElementById("range_sl");
+        noUiSlider.create(priceSlider2, {
+          start: [ 1000, 50000 ],
+          range: {
+              'min': [ 0 ],
+              'max': [ 100000 ]
+          },
+          connect: true,
+          format: wNumb({
+              decimals: 0
+          })
+        });
+        priceSlider2.noUiSlider.on('update', function( values, handle ) {
+            minVal = parseInt( values[0] );
+            maxVal = parseInt( values[1] );
+            $("#sl_range_val_1").val(minVal);
+            $("#sl_range_val_2").val(maxVal);
+        });
+        priceSlider2.noUiSlider.on('set', function( values, handle ) {        
+            minVal = parseInt( values[0] );
+            maxVal = parseInt( values[1] );
+            $("#sl_range_val_1").val(minVal);
+            $("#sl_range_val_2").val(maxVal);
+        });
+        $("#sl_range_val_1").keyup(function() {
+            activeInputVal = parseInt( $(this).val() );
+            if( activeInputVal < parseInt( $("#sl_range_val_2").val() ) ) {
+                leftRange = parseInt( $(this).val() );
+                priceSlider2.noUiSlider.set([leftRange, null]);
+            }
+        });
+        $("#sl_range_val_2").keyup(function() {
+          activeInputVal = parseInt( $(this).val() );
+          if( activeInputVal > parseInt( $("#sl_range_val_1").val() ) ) {
+              rightRange = parseInt( $(this).val() );
+              priceSlider2.noUiSlider.set([null, rightRange]);
+          }
+        });
+    }
+
+  // -----------
+
+
+  $(".dr_box.active").find(".dr_content").css({
+    "display" : "block"
+  });
+
+  $(".dr_title").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".dr_box");
+    dr = parent.find(".dr_content");
+    if(dr.is(":hidden")){
+      dr.slideDown(300);
+      parent.addClass("active");
+    } else {
+      dr.slideUp(300);
+      parent.removeClass("active");
+    }
+  });
+
+
 });

@@ -3,3 +3,4 @@
 # http://postolenko.github.io/bd/portfolio.html
 # http://postolenko.github.io/bd/contacts.html
 # http://postolenko.github.io/bd/404.html
+# http://postolenko.github.io/bd/catalog.html
