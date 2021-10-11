@@ -2581,6 +2581,9 @@ ul.num_list li .num {
     padding: 0 11px;
     background: #fff;
     border: 1px solid #e3e3e3;
+    font-size: 12px;
+    line-height: 34px;
+    color: #393939;
 }
 
 .checkboxes_wrapp {
@@ -2712,7 +2715,7 @@ ul.num_list li .num {
     content: "";
     width: 2px;
     height: 6px;
-    background: #323232;
+    background: #f4f3f3;
     position: absolute;
     top: -2px;
     left: -2px;
@@ -2724,7 +2727,7 @@ ul.num_list li .num {
     content: "";
     width: 2px;
     height: 6px;
-    background: #323232;
+    background: #f4f3f3;
     position: absolute;
     top: -2px;
     right: -2px;
@@ -2801,12 +2804,12 @@ ul.num_list li .num {
     display: flex;
     display: -webkit-flex;
     margin-top: 16px;
-    padding: 3px 0;
+    padding: 3px 0 14px;
     border-bottom: 1px solid #f2f2f2;
 }
 
 .sort_wrapp > div:nth-child(1) {
-
+    padding-right: 5px;
 }
 
 .sort_wrapp > div:nth-child(2) {
@@ -2826,12 +2829,13 @@ ul.num_list li .num {
 }
 
 .sort_list li {
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 .sort_list li a {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    padding-right: 15px;
+    position: relative;
     font-weight: 500;
     font-size: 13px;
     line-height: 17px;
@@ -2871,10 +2875,60 @@ ul.num_list li .num {
     color: #028d63;
 }
 
+.sort_list li a span {
+    white-space: nowrap;
+}
+
+.sort_list li a svg {
+    max-width: 12px;
+    max-height: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    stroke: #c2c2c2;
+    -webkit-transition-property: stroke;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: stroke;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: stroke;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: stroke;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: stroke;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.sort_list li a:link svg,
+.sort_list li a.visited svg {
+    stroke: #c2c2c2;
+}
+
+.sort_list li a:active svg,
+.sort_list li a.active svg {
+    stroke: #028d63;
+}
+
+.sort_list li a:hover svg {
+    stroke: #028d63;
+}
+
 .search_form {
     display: flex;
     display: -webkit-flex;
     border: 1px solid #f2f2f2;
+}
+
+.search_form:focus-within {
+    border: 1px solid #393939;
 }
 
 .search_input {
@@ -2883,8 +2937,13 @@ ul.num_list li .num {
     height: 49px;
     padding: 0 20px;
     border: none;
+    font-weight: 500;
     font-size: 14px;
     line-height: 48px;
+    color: #393939;
+}
+
+.search_input::placeholder {
     color: #9b9b9b;
 }
 
@@ -2985,6 +3044,28 @@ ul.num_list li .num {
     font-size: 16px;
     line-height: 29px;
 }
+
+.not_found_res {
+    margin-bottom: 17px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.not_found_res h3 {
+    padding: 33px 0 11px 0;
+    font-size: 24px;
+}
+
+.transparent_pill_2_2 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: auto;
+    min-width: 135px;
+    font-size: 12px;
+    padding: 4px 10px 6px 10px;
+}
+
 
 /*-- /Section 1 - Catalog Page --*/
 
