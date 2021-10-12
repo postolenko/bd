@@ -209,5 +209,129 @@ $(document).ready(function() {
     }
   });
 
+  // -----------
+
+    if( $(".card_main_slider").length > 0 ) {
+      $(".card_main_slider").not(".slick-initialized").slick({
+          dots: false,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          infinite: false,
+          asNavFor: '.card_miniature_slider',
+          prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
+          nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>'
+      });
+
+      $(".card_miniature_slider").not(".slick-initialized").slick({
+          dots: false,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: false,
+          asNavFor: '.card_main_slider',
+          prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
+          nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>',
+          // responsive: [
+          //     {
+          //       breakpoint: 1100,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 4,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 768,
+          //       settings: {
+          //         slidesToShow: 3,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 510,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 400,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+
+    }
+
+    if( $(".simmilar_goods_slider").length > 0 ) {
+      $(".simmilar_goods_slider").not(".slick-initialized").slick({
+          dots: false,
+          arrows: true,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: false,
+          prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
+          nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>',
+          // responsive: [
+          //     {
+          //       breakpoint: 1100,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 4,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 768,
+          //       settings: {
+          //         slidesToShow: 3,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 510,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 1
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 400,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+    }
+
+
 
 });

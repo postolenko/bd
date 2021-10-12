@@ -5,3 +5,4 @@
 # http://postolenko.github.io/bd/404.html
 # http://postolenko.github.io/bd/catalog.html
 # http://postolenko.github.io/bd/search_res.html
+# http://postolenko.github.io/bd/card.html
