@@ -600,8 +600,9 @@ textarea:focus {
 .header_templ {
     display: flex;
     display: -webkit-flex;
-    padding: 24px 50px 30px 45px;
-    background: #fdfdfd;
+    padding: 24px 50px 28px 45px;
+    /*background: #fdfdfd;*/
+    background-color: #fff;
 }
 
 .header_templ > .left_col {
@@ -610,11 +611,7 @@ textarea:focus {
 }
 
 .header_templ > .center_col {
-    width: calc(100% - 23%);
-}
-
-.header_templ > .center_col .row {
-    padding: 0;
+    width: 77%;
 }
 
 .header_templ > .right_col {
@@ -857,6 +854,39 @@ textarea:focus {
 }
 
 /* ----- / Responsive Menu Button ------ */
+
+.soc_list {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin: 9px -5px 3px -5px;
+}
+
+.soc_list li {
+    padding: 5px;
+}
+
+.soc_list li a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    position: relative;
+}
+
+.soc_list li a svg {
+    display: block;
+    height: 13px;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1670px) {
 
 .header_templ {
     padding-left: 0;
@@ -15,10 +15,6 @@
 
 .header_templ > .right_col {
 	display: none;
-}
-
-.header_templ > .center_col .row {
-    padding: 0 25px;
 }
 
 }
