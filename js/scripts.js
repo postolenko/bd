@@ -289,7 +289,6 @@ $(document).ready(function() {
           speed: 1200,
           slidesToShow: 4,
           slidesToScroll: 4,
-          infinite: false,
           prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
           nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>',
           // responsive: [
