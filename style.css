@@ -1501,7 +1501,7 @@ textarea:focus {
 }
 
 .cards_slider {
-    margin: 0 -15px;
+    margin: 0 -20px;
 }
 
 .cards_slider .slick-prev {
@@ -1513,13 +1513,14 @@ textarea:focus {
 }
 
 .cards_slider .slide {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .product_thumb {
-    width: 368px;
+    /*width: 368px;*/
+    max-width: 368px;
     min-height: 556px;
-    margin: 50px 0;
+    margin: 50px auto;
     padding-bottom: 20px;
     background-color: #fff;
     border: 1px solid #ededed;
@@ -1545,8 +1546,8 @@ textarea:focus {
 }
 
 .product_thumb:hover {
-    box-shadow: 0 0 39.99px 3.01px rgba(0, 0, 0, .08);
-    -webkit-box-shadow: 0 0 39.99px 3.01px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 25.99px 3.01px rgba(0, 0, 0, .08);
+    -webkit-box-shadow: 0 0 25.99px 3.01px rgba(0, 0, 0, .08);
 }
 
 .product_thumb .img_box {
