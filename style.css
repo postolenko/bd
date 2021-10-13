@@ -2427,6 +2427,12 @@ ul.num_list li .num {
     height: 740px;
 }
 
+.ymaps-map.ymaps-i-ua_js_yes {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
 /*-- /Section 6 - Simple Page --*/
 
 /*-- Section 1 - 404 Page --*/
