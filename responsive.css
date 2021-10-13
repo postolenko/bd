@@ -19,6 +19,10 @@
 	    width: 9%;
 	}
 
+	.menu_header > .left_col .logo {
+	    left: 0;
+	}
+
 	/*-- /Header --*/
 
 }
