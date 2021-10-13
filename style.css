@@ -1505,11 +1505,11 @@ textarea:focus {
 }
 
 .cards_slider .slick-prev {
-    left: -146px;
+    left: -139px;
 }
 
 .cards_slider .slick-next {
-    right: -145px;
+    right: -144px;
 }
 
 .cards_slider .slide {
