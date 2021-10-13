@@ -331,6 +331,40 @@ $(document).ready(function() {
       });
     }
 
+    // -----------------
 
+    $(".respmenubtn").on("click", function(e) {
+      e.preventDefault();
+      if( $("#mainMenu").is(":hidden") ) {
+        $("#mainMenu").fadeIn(300);
+        $(this).addClass("active");
+      } else {
+        $("#mainMenu").fadeOut(300);
+        $(this).removeClass("active");
+      }
+    });
+
+    $("#closeMenu").on("click", function(e) {
+      e.preventDefault();
+      $("#mainMenu").fadeOut(300);
+      $(".respmenubtn").removeClass("active");
+    });
+
+    $(this).keydown(function(eventObject){
+      if (eventObject.which == 27) {
+        $("#mainMenu").fadeOut(300);
+        $(".respmenubtn").removeClass("active");
+      }
+    });
+
+    $(document).on("mouseup", function(e) {
+        e.preventDefault();
+        hide_element = $("#mainMenu");
+        if (!hide_element.is(e.target)
+          && hide_element.has(e.target).length === 0) {
+          $("#mainMenu").fadeOut(300);
+          $(".respmenubtn").removeClass("active");
+        }
+    });
 
 });
