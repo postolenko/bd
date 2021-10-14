@@ -149,16 +149,19 @@ input[type="number"] {
 }
 
 input {
+    font-family: 'Playfair Display';
     -webkit-appearance: none;
     -moz-appearance
 }
 
 button {
+    font-family: 'Playfair Display';
     -webkit-appearance: none;
     -moz-appearance
 }
 
 textarea {
+    font-family: 'Playfair Display';
     resize: none;
     overflow: auto;
     -webkit-appearance: none;
@@ -1517,7 +1520,6 @@ textarea:focus {
 }
 
 .product_thumb {
-    /*width: 368px;*/
     max-width: 368px;
     min-height: 556px;
     margin: 50px auto;
@@ -1716,6 +1718,42 @@ textarea:focus {
     line-height: 20px;
     font-weight: 500;
     color: #393939;
+    -webkit-transition-property: background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.transparent_pill_2:link,
+.transparent_pill_2:visited {
+    background: transparent;
+    color: #393939;
+}
+
+.transparent_pill_2:active,
+.transparent_pill_2.active {
+    background: #393939;
+    color: #fff;
+}
+
+.transparent_pill_2:hover {
+    background: #393939;
+    color: #fff;
 }
 
 .thumb_footer .transparent_pill_2 {
@@ -2483,15 +2521,55 @@ ul.num_list li .num {
     min-width: 220px;
     cursor: pointer;
     background: #393939;
-    border: none;
-    padding: 16px 10px 20px 10px;
+    border: 1px solid #393939;
+    padding: 15px 10px 19px 10px;
     text-align: center;
+    font-family: 'Playfair Display';
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
     color: #fff;
     position: relative;
     z-index: 2;
+    -webkit-transition-property: background, border, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, border, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, border, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, border, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, border, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.brown_pill:link,
+.brown_pill:visited {
+    border: 1px solid #393939;
+    background: #393939;
+    color: #fff;
+}
+
+.brown_pill:active,
+.brown_pill.active {
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+}
+
+.brown_pill:hover {
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
 }
 
 .templ_404 .brown_pill {
@@ -3646,10 +3724,6 @@ ul.num_list li .num {
     top: 72px;
 }
 
-.product_tag_2 {
-
-}
-
 .card_main_slider {
     border: 1px solid #ededed;
 }
@@ -3683,6 +3757,7 @@ ul.num_list li .num {
     height: 105px;
     margin: 10px;
     position: relative;
+    cursor: pointer;
     overflow: hidden;
     border: 1px solid #ededed;
     -webkit-transition-property: border;
@@ -3837,7 +3912,7 @@ ul.num_list li .num {
 
 .brown_pill_2 {
     min-width: 180px;
-    padding: 12px 23px 14px 23px;
+    padding: 11px 23px 13px 23px;
     font-size: 14px;
 }
 
@@ -3957,3 +4032,165 @@ footer {
 .link_1:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
+
+/*-- Popup --*/
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 19;
+}
+
+.popup_content {
+    max-width: 500px;
+    width: 98%;
+    margin: 70px auto 20px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.close_popup {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-size: contain;
+}
+
+.popup_content .close_popup {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    z-index: 2;
+}
+
+.form_box_2 {
+    padding-top: 26px;
+    background-color: #fff;
+    border: none;
+}
+
+.form_box_2 .form_descript {
+    padding-top: 4px;
+}
+
+.count_box_wrapp {
+    padding-top: 9px;
+    text-align: center;
+}
+
+.count_box_wrapp h5 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.count_box {
+    display: flex;
+    display: -webkit-flex;
+    width: 140px;
+    margin: 11px auto 14px auto;
+}
+
+.count_box input {
+    display: block;
+    width: 58px;
+    height: 46px;
+    padding-bottom: 4px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 45px;
+    color: #393939;
+}
+
+.minus_btn {
+    display: block;
+    cursor: pointer;
+    width: 41px;
+    height: 46px;
+    border: none;
+    background: no-repeat;
+    position: relative;
+}
+
+.minus_btn:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plus_btn {
+    display: block;
+    cursor: pointer;
+    width: 41px;
+    height: 46px;
+    border: none;
+    background: no-repeat;
+    position: relative;
+}
+
+.plus_btn:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form_title_2 {
+    padding: 0;
+}
+
+.ch_icon {
+    width: 40px;
+    height: 40px;
+    margin: 35px 0 -13px 0;
+}
+
+.suc_text {
+    margin: 5px auto 10px auto;
+    max-width: 330px;
+}
+
+.suc_text p {
+    line-height: 1.5;
+}
+
+/*-- /Popup  --*/

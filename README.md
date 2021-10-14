@@ -6,3 +6,4 @@
 # http://postolenko.github.io/bd/catalog.html
 # http://postolenko.github.io/bd/search_res.html
 # http://postolenko.github.io/bd/card.html
+# http://postolenko.github.io/bd/thanks.html
