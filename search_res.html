@@ -19,18 +19,25 @@
 	<!-- Header -->
 		
 	<header>
-		<div class="header_templ">
+		<div class="header_templ" id="header">
 			<div class="left_col">
-				<button class="respmenubtn">
-					<div>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div>
-						<p>Меню</p>
-					</div>
-				</button>
+				<div>
+					<button class="respmenubtn">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div>
+							<p>Меню</p>
+						</div>
+					</button>
+				</div>
+				<div>
+					<a href="#" class="logo logo_resp">
+						<img src="img/logo.svg" alt="" />
+					</a>
+				</div>
 			</div>
 			<div class="center_col">
 				<div class="row">
@@ -43,17 +50,45 @@
 						<div class="center">
 							<div class="main_nav_wrapp" id="resp_nav">
 								<ul class="main_nav">
-									<li><a href="#">Каталог</a></li>
-									<li><a href="#">Услуги</a></li>
-									<li><a href="#">Наши работы</a></li>
-									<li><a href="#">Покупателю</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li>
+										<a href="#">Каталог</a>
+										<ul class="sub_menu">
+											<li><a href="#">Гладкие</a></li>
+											<li><a href="#">Рото-дверь</a></li>
+											<li><a href="#">Классические</a></li>
+											<li><a href="#">Перегородки</a></li>
+											<li><a href="#">Современные</a></li>
+											<li><a href="#">Цветные (RAL, CS)</a></li>
+											<li><a href="#">Скрытые</a></li>
+											<li><a href="#">Входные</a></li>
+											<li><a href="#">Раздвижные</a></li>
+											<li><a href="#">Фурнитура</a></li>
+											<li><a href="#">Дверь-книжка</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Услуги</a>
+										<ul class="sub_menu">
+											<li><a href="#">Замер</a></li>
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Монтаж</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Наши работы</a>
+									</li>
+									<li>
+										<a href="#">Покупателю</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
 							<div>
-							<a href="#" class="dark_pill"><span>Обратная связь</span></a>
+							<a href="#" class="dark_pill" data-popup-link = "popup_1"><span>Обратная связь</span></a>
 						</div>
 						</div>
 					</div>
@@ -62,7 +97,7 @@
 			<div class="right_col">
 				<ul class="soc_list">
 					<li>
-						<a href="#">
+						<a href="#" data-popup-link = "popup_1">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve">
 							<path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"/>
 							</svg>
@@ -109,42 +144,52 @@
 				</div>
 				<div class="menu_templ">
 					<div class="col">
-						<div>
-							<a href="#" class="title_link">Каталог</a>
+						<div class="dr_box">
+							<div>
+								<a href="#" class="title_link">Каталог<button type="button" class="dr_menu"></button></a>
+							</div>
+							<ul class="menu_list two_col_list dr_list">
+								<li><a href="#">Гладкие</a></li>
+								<li><a href="#">Рото-дверь</a></li>
+								<li><a href="#">Классические</a></li>
+								<li><a href="#">Перегородки</a></li>
+								<li><a href="#">Современные</a></li>
+								<li><a href="#">Цветные (RAL, CS)</a></li>
+								<li><a href="#">Скрытые</a></li>
+								<li><a href="#">Входные</a></li>
+								<li><a href="#">Раздвижные</a></li>
+								<li><a href="#">Фурнитура</a></li>
+								<li><a href="#">Дверь-книжка</a></li>
+							</ul>
 						</div>
-						<ul class="menu_list two_col_list">
-							<li><a href="#">Гладкие</a></li>
-							<li><a href="#">Рото-дверь</a></li>
-							<li><a href="#">Классические</a></li>
-							<li><a href="#">Перегородки</a></li>
-							<li><a href="#">Современные</a></li>
-							<li><a href="#">Цветные (RAL, CS)</a></li>
-							<li><a href="#">Скрытые</a></li>
-							<li><a href="#">Входные</a></li>
-							<li><a href="#">Раздвижные</a></li>
-							<li><a href="#">Фурнитура</a></li>
-							<li><a href="#">Дверь-книжка</a></li>
-						</ul>
+					</div>
+					<div class="col">
+						<div class="dr_box">
+							<div>
+								<div class="title_link">Услуги<button type="button" class="dr_menu"></button></div>
+							</div>
+							<ul class="menu_list dr_list">
+								<li><a href="#">Замер</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Монтаж</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="col">
 						<div>
-							<a href="#" class="title_link">Услуги</a>
-						</div>
-						<ul class="menu_list">
-							<li><a href="#">Замер</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Монтаж</a></li>
-						</ul>
-					</div>
-					<div class="col">
-						<div>
-							<a href="#" class="title_link">Покупателю</a>
+							<div class="dr_box">
+								<a href="#" class="title_link">Покупателю</a>
+							</div>
 						</div>
 						<div>
-							<a href="#" class="title_link">Наши работы</a>
+							<div class="dr_box">
+								<a href="#" class="title_link">Наши работы</a>
+							</div>
 						</div>
 						<div>
-							<a href="#" class="title_link">Контакты</a>
+							<div class="dr_box">
+								<a href="#" class="title_link">Контакты</a>
+							</div>
 						</div>
 					</div>
 					<div class="col">
@@ -153,7 +198,7 @@
 						</div>
 						<ul class="soc_list soc_list_2">
 							<li>
-								<a href="#">
+								<a href="#" data-popup-link = "popup_1">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve">
 									<path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"/>
 									</svg>
@@ -198,7 +243,8 @@
 		<div class="row">
 			<ul class="breadcrumbs">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Каталог дверей</a></li>
+				<li><a href="#">ALTO 2P Белый Эмалит</a></li>
 			</ul>
 		</div>
 	</div>
@@ -218,8 +264,8 @@
 				<div class="catalog_templ">
 					<div class="left">
 						<div class="sidebar">
-							<div class="sidebar_dropdown active dr_box">
-								<div class="sidebar_dropdown_btn brown dr_title">
+							<div class="sidebar_dropdown active dr_box_2">
+								<div class="sidebar_dropdown_btn brown dr_title_2">
 									<div>
 										<img class="sidebar_icon" src="img/burger.svg" alt="" /> 
 									</div>
@@ -227,7 +273,7 @@
 										<p>Категории товаров</p>
 									</div>
 								</div>
-								<div class="sidebar_dropdown_content dr_content">
+								<div class="sidebar_dropdown_content dr_content_2">
 									<ul class="sidebar_menu_list">
 										<li>
 											<a href="#"><span>Гладкие</span></a>
@@ -237,11 +283,12 @@
 										</li>
 										<li>
 											<a href="#" class="active"><span>Современные</span></a>
-											<!-- <ul>
+											<button type="button" class="dr_btn_2"></button>
+											<ul>
 												<li><a href="#">Пункт 1</a></li>
 												<li><a href="#">Пункт 2</a></li>
 												<li><a href="#">Пункт 3</a></li>
-											</ul> -->
+											</ul>
 										</li>
 										<li>
 											<a href="#"><span>Скрытые</span></a>
@@ -270,9 +317,8 @@
 									</ul>
 								</div>
 							</div>
-
-							<div class="sidebar_dropdown dr_box">
-								<div class="sidebar_dropdown_btn green dr_title">
+							<div class="sidebar_dropdown active dr_box_2">
+								<div class="sidebar_dropdown_btn green dr_title_2">
 									<div>
 										<img class="sidebar_icon" src="img/filter.svg" alt="" /> 
 									</div>
@@ -280,13 +326,13 @@
 										<p>Фильтр товаров</p>
 									</div>
 								</div>
-								<div class="sidebar_dropdown_content dr_content">
+								<div class="sidebar_dropdown_content dr_content_2">
 									<div class="filters_wrapp">
-										<div class="filter_item dr_box active">
-											<div class="filter_item_title dr_title">
+										<div class="filter_item dr_box_2 active">
+											<div class="filter_item_title dr_title_2">
 												<h3>Цена товара (руб.)</h3>
 											</div>
-											<div class="filter_item_contet dr_content">
+											<div class="filter_item_contet dr_content_2">
 												<div class="range_sl_inputs">
 													<div>
 														<div class="input_wrap_2">
@@ -302,11 +348,11 @@
 												<div class="range_sl" id="range_sl"></div>
 											</div>
 										</div>
-										<div class="filter_item dr_box active">
-											<div class="filter_item_title dr_title">
+										<div class="filter_item dr_box_2 active">
+											<div class="filter_item_title dr_title_2">
 												<h3>Наличие</h3>
 											</div>
-											<div class="filter_item_contet dr_content">
+											<div class="filter_item_contet dr_content_2">
 												<div class="checkboxes_wrapp">
 													<div class="checkbox">
 														<label for="ch_1"><input type="checkbox" name="ch" id="ch_1" /><span>На складе</span></label>
@@ -317,11 +363,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="filter_item dr_box active">
-											<div class="filter_item_title dr_title">
+										<div class="filter_item dr_box_2 active">
+											<div class="filter_item_title dr_title_2">
 												<h3>Стиль</h3>
 											</div>
-											<div class="filter_item_contet dr_content">
+											<div class="filter_item_contet dr_content_2">
 												<div class="checkboxes_wrapp">
 													<div class="checkbox">
 														<label for="ch_3"><input type="checkbox" name="ch" id="ch_3" /><span>Классика</span></label>
@@ -343,7 +389,6 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 					<div class="right">
@@ -351,7 +396,8 @@
 							<div class="left">
 								<div class="sort_wrapp">
 									<div>
-										<h5>Сортировать по:</h5>
+										<h5 class="h3_desk">Сортировать по:</h5>
+										<h5 class="h3_resp">По цене:</h5>
 									</div>
 									<div>
 										<ul class="sort_list">
@@ -463,7 +509,7 @@
 	<script src="vendors/js/nouislider.js"></script>
 	<script src="vendors/js/wNumb.js"></script>
 	<script src="js/scripts.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap" async defer></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU"></script>
 	<script src="js/map.js"></script>
 
 </body>

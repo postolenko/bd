@@ -1007,6 +1007,14 @@
 
 	/*-- /Footer --*/
 
+	/*-- Popup --*/
+
+	.form_box.form_box_2 {
+	    padding: 37px 20px 26px 20px;
+	}
+
+	/*-- /Popup --*/
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -1140,6 +1148,29 @@
 	}
 
 	/*-- /Section 1 - Catalog Page --*/
+
+	/*-- Popup --*/
+
+	.submit_wrapp_2 {
+	    padding: 5px 0 16px 0;
+	}
+
+	.ch_icon {
+	    width: 32px;
+	    height: 32px;
+	    margin: 35px 0 -13px 0;
+	}
+
+	.suc_text p {
+	    font-size: 15px;
+	    line-height: 20px;
+	}
+
+	.form_box .submit_wrapp.submit_wrapp_2 .brown_pill {
+	    min-width: 168px;
+	}
+
+	/*-- /Popup --*/
 
 }
 
