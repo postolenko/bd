@@ -1,31 +1,20 @@
-// if( document.getElementById("map") ) {
-//     function initMap() {
-//         var image2 = "img/pin.png";
-//         map2 = new google.maps.Map(document.getElementById('map'), {
-//             center: {lat: 55.882593, lng: 37.5477503},
-//             scrollwheel: false,
-//             scaleControl: false,
-//             zoom: 16,
-//             disableDefaultUI: true,
-//             mapTypeId: google.maps.MapTypeId.ROADMAP
-//         });
-//         marker2 = new google.maps.Marker({
-//             map: map2,
-//             draggable: false,
-//             animation: google.maps.Animation.DROP,
-//             position: {lat: 55.882593, lng: 37.5477503},
-//             icon: image2,
-//             title: ''
-//         });
-//         marker.addListener('click', toggleBounce);
-//     }
-// }
+var w = window,
+d = document,
+e = d.documentElement,
+g = d.getElementsByTagName('body')[0],
+bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+var mapLeftCoord = 37.623937;
+
+if(bodyWidth <= 600) {
+    mapLeftCoord = 37.615937;
+}
 
 if( document.getElementById("map") ) {
 
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-            center: [55.592525, 37.623937],
+            center: [55.592525, mapLeftCoord],
             zoom: 15
         }, {
             searchControlProvider: 'yandex#search'
