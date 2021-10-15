@@ -964,6 +964,23 @@
 
 	/*-- /Section 1 - Contacts Page --*/
 
+	/*-- Section 1 - Portfolio Page --*/
+
+	.sect_1_pp {
+	    padding-bottom: 19px;
+	}
+
+	.descript_article.descript_article_2 {
+	    padding-top: 11px;
+	}
+
+	.pag_resp_center {
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
+	/*-- /Section 1 - Portfolio Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ {
@@ -1316,5 +1333,18 @@
 	}
 
 	/*-- /Section 1 - Contacts Page --*/
+
+	/*-- Section 1 - Portfolio Page --*/
+
+	.images_thumbnails_2 {
+	    margin: 7px 0 10px 0;
+	}
+
+	.images_thumbnails .img_thumb {
+	    width: 100%;
+	    margin: 10px 0;
+	}
+
+	/*-- /Section 1 - Portfolio Page --*/
 
 }
