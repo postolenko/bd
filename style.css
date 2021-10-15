@@ -600,11 +600,22 @@ textarea:focus {
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
 
+.wrapper {
+    padding-top: 116px;
+}
+
+#header {
+    width: 100%;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .header_templ {
     display: flex;
     display: -webkit-flex;
     padding: 24px 50px 28px 45px;
-    /*background: #fdfdfd;*/
     background-color: #fff;
 }
 
@@ -974,7 +985,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #454545;
+    background: #028d63;
 }
 
 .respmenubtn.active span {
@@ -982,7 +993,7 @@ textarea:focus {
     width: 28px;
     top: 2px;
     left: 0;
-    background: #454545;
+    background: #028d63;
 }
 
 .respmenubtn.active span:last-child {
