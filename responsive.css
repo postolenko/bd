@@ -461,6 +461,20 @@
 
 	/*-- /Section 1 - Catalog Page --*/
 
+	/*-- Section 1 - Contacts Page --*/
+
+	.contacts_templ > .left_col {
+	    width: 100%;
+	    padding: 15px 0;
+	}
+
+	.contacts_templ > .right_col {
+	    width: 100%;
+	    padding: 15px 0;
+	}
+
+	/*-- /Section 1 - Contacts Page --*/
+
 }
 
 @media only screen and (max-width: 767px) {
