@@ -3041,11 +3041,16 @@ ul.num_list li .num {
 }
 
 .sidebar_dropdown_content {
+    display: none;
     padding: 0 13px;
     background-color: #fdfdfd;
     border-left: 1px solid #f7f7f7;
     border-right: 1px solid #f7f7f7;
     border-bottom: 1px solid #f7f7f7;
+}
+
+.sidebar_dropdown.active .sidebar_dropdown_content {
+    display: block !important;
 }
 
 .sidebar_menu_list {
