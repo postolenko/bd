@@ -519,6 +519,8 @@ textarea:focus {
 .breadcrumbs {
     display: flex;
     display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin: 0 -5px;
     line-height: 1;
 }
@@ -3889,7 +3891,7 @@ ul.num_list li .num {
 }
 
 .card_table h3 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
 }
@@ -4000,7 +4002,7 @@ ul.num_list li .num {
 
 .simmilar_goods_slider .product_thumb_2 {
     width: auto;
-    margin: 10px 0 30px 0;
+    margin: 10px auto 30px auto;
 }
 
 .simmilar_goods_slider .slick-prev {

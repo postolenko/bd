@@ -123,6 +123,18 @@
 
 	/*-- /Section 4 - Main Page --*/
 
+	/*-- Sect 2 - Card Page --*/
+
+	.simmilar_goods_slider .slick-prev {
+	    left: 10px;
+	}
+
+	.simmilar_goods_slider .slick-next {
+	    right: 10px;
+	}
+
+	/*-- /Sect 2 - Card Page --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -204,15 +216,6 @@
 	    display: block;
 	}
 
-/*	.respmenubtn > div:nth-child(1) {
-		text-align: right;
-	}
-
-	.respmenubtn > div:nth-child(1) span {
-		display: inline-block;
-		vertical-align: top;
-	}*/
-
 	.title_link {
 	    font-size: 22px;
 	    line-height: 35px;
@@ -278,6 +281,31 @@
 	}
 
 	/*-- /Section 4 - Main Page --*/
+
+	/*-- Sect 1 - Card Page --*/
+
+	.cardt_templ {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.cardt_templ > .left_col {
+	    width: 100%;
+	    max-width: 450px;
+	    margin: 0 auto;
+	    padding-right: 0;
+	}
+
+	.cardt_templ > .right_col {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.card_table {
+		max-width: 600px;
+	}
+
+	/*-- /Sect 1 - Card Page --*/
 
 }
 
@@ -678,6 +706,50 @@
 
 	/*-- /Section 6 - Simple Page --*/
 
+	/*-- Sect 1 - Card Page --*/
+
+	.price_2 span {
+		font-size: 26px;
+		line-height: 29px;
+	}
+
+	.card_price_wrapp {
+		padding-top: 11px;
+	}
+
+	.card_btns_wrapp {
+	    padding: 8px 0;
+	}
+
+	.card_price_wrapp {
+	    margin: 0 -3px;
+	}
+
+	.card_price_wrapp > div {
+	    padding: 0 3px;
+	}
+
+	.card_btns_wrapp > div {
+		min-width: 220px;
+	}
+
+	.card_btns_wrapp a,
+	.card_btns_wrapp button {
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		-webkit-align-items: center;
+		justify-content: center;
+		-webkit-justify-content: center;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		min-height: 46px;
+		min-width: 100%;
+		width: 100%;
+	}
+
+	/*-- /Sect 1 - Card Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ {
@@ -721,6 +793,7 @@
 
 	h2 {
 	    font-size: 26px;
+	    line-height: 1.4;
 	}
 
 	/*-- Section 2 - Main Page --*/
@@ -731,7 +804,7 @@
 
 	.brown_pill {
 	    min-width: 220px;
-	    padding: 13px 10px 15px 10px;
+	    padding: 13px 10px 14px 10px;
 	    font-size: 14px;
 	    line-height: 20px;
 	}
@@ -741,6 +814,43 @@
 	}
 
 	/*-- /Section 2 - Main Page --*/
+
+	/*-- Section 1 - 404 Page --*/
+
+	.templ_404 h3 {
+	    font-size: 45px;
+	    line-height: 50px;
+	}
+
+	.templ_404 p {
+	    font-size: 15px;
+	}
+
+	.templ_404 .brown_pill {
+	    margin: 12px 0;
+	}
+
+	/*-- /Section 1 - 404 Page --*/
+
+	/*-- Sect 1 - Card Page --*/
+
+	.card_main_slider .slide {
+	    height: 290px;
+	}
+
+	.card_miniature_slider {
+	    margin: 4px -10px;
+	}
+
+	.card_miniature_slider .slide {
+	    height: 52px;
+	}
+
+	.card_btns_wrapp > div {
+		min-width: 50%;
+	}
+
+	/*-- /Sect 1 - Card Page --*/
 
 }
 
@@ -786,6 +896,10 @@
 
 @media only screen and (max-width: 480px) {
 
+	h3 {
+	    font-size: 26px;
+	}
+
 	/*-- Section 4 - Main Page --*/
 
 	.sect_4_mp {
@@ -818,5 +932,80 @@
 	}
 
 	/*-- /Section 6 - Simple Page --*/
+
+	/*-- Sect 1 - Card Page --*/
+	
+	.h2_wrapp_left {
+	    padding: 10px 0 7px 0;
+	}
+
+	.cardt_templ {
+	    padding-bottom: 19px;
+	}
+
+	.card_miniature_slider {
+		margin: 4px -5px;
+	}
+
+	.card_miniature_slider .slide {
+		margin: 10px 5px 5px 5px;
+	}
+
+	.card_table {
+	    padding-bottom: 5px;
+	}
+
+	.card_table h3 {
+	    font-size: 14px;
+	}
+
+	.card_table p {
+	    font-size: 14px;
+	}
+
+	.card_product_descript {
+	    padding: 5px 0 23px;
+	}
+
+	.card_product_descript p {
+	    font-size: 14px;
+	    line-height: 21px;
+	}
+
+	.card_btns_wrapp > div {
+		display: flex;
+		display: -webkit-flex;
+		width: 50%;
+	}
+
+	.price_2 span {
+	    line-height: 31px;
+	}
+
+	/*-- /Sect 1 - Card Page --*/
+
+	/*-- Sect 2 - Card Page --*/
+
+	.sect_2_cp {
+	    padding: 25px 0 33px;
+	}
+
+	.h3_wrapp {
+		text-align: center;
+	}
+
+	.simmilar_goods_slider {
+	    margin: 0;
+	}
+
+	.simmilar_goods_slider .slide {
+	    padding: 15px 0;
+	}
+
+	.simmilar_goods_slider .product_thumb_2 {
+	    margin: 10px auto 16px auto;
+	}
+
+	/*-- /Sect 2 - Card Page --*/
 
 }

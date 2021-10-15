@@ -19,18 +19,25 @@
 	<!-- Header -->
 		
 	<header>
-		<div class="header_templ">
+		<div class="header_templ" id="header">
 			<div class="left_col">
-				<button class="respmenubtn">
-					<div>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div>
-						<p>Меню</p>
-					</div>
-				</button>
+				<div>
+					<button class="respmenubtn">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div>
+							<p>Меню</p>
+						</div>
+					</button>
+				</div>
+				<div>
+					<a href="#" class="logo logo_resp">
+						<img src="img/logo.svg" alt="" />
+					</a>
+				</div>
 			</div>
 			<div class="center_col">
 				<div class="row">
@@ -43,17 +50,45 @@
 						<div class="center">
 							<div class="main_nav_wrapp" id="resp_nav">
 								<ul class="main_nav">
-									<li><a href="#">Каталог</a></li>
-									<li><a href="#">Услуги</a></li>
-									<li><a href="#">Наши работы</a></li>
-									<li><a href="#">Покупателю</a></li>
-									<li><a href="#">Контакты</a></li>
+									<li>
+										<a href="#">Каталог</a>
+										<ul class="sub_menu">
+											<li><a href="#">Гладкие</a></li>
+											<li><a href="#">Рото-дверь</a></li>
+											<li><a href="#">Классические</a></li>
+											<li><a href="#">Перегородки</a></li>
+											<li><a href="#">Современные</a></li>
+											<li><a href="#">Цветные (RAL, CS)</a></li>
+											<li><a href="#">Скрытые</a></li>
+											<li><a href="#">Входные</a></li>
+											<li><a href="#">Раздвижные</a></li>
+											<li><a href="#">Фурнитура</a></li>
+											<li><a href="#">Дверь-книжка</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Услуги</a>
+										<ul class="sub_menu">
+											<li><a href="#">Замер</a></li>
+											<li><a href="#">Доставка</a></li>
+											<li><a href="#">Монтаж</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Наши работы</a>
+									</li>
+									<li>
+										<a href="#">Покупателю</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="right">
 							<div>
-							<a href="#" class="dark_pill"><span>Обратная связь</span></a>
+							<a href="#" class="dark_pill" data-popup-link = "popup_1"><span>Обратная связь</span></a>
 						</div>
 						</div>
 					</div>
@@ -62,7 +97,7 @@
 			<div class="right_col">
 				<ul class="soc_list">
 					<li>
-						<a href="#">
+						<a href="#" data-popup-link = "popup_1">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve">
 							<path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"/>
 							</svg>
@@ -109,42 +144,52 @@
 				</div>
 				<div class="menu_templ">
 					<div class="col">
-						<div>
-							<a href="#" class="title_link">Каталог</a>
+						<div class="dr_box">
+							<div>
+								<a href="#" class="title_link">Каталог<button type="button" class="dr_menu"></button></a>
+							</div>
+							<ul class="menu_list two_col_list dr_list">
+								<li><a href="#">Гладкие</a></li>
+								<li><a href="#">Рото-дверь</a></li>
+								<li><a href="#">Классические</a></li>
+								<li><a href="#">Перегородки</a></li>
+								<li><a href="#">Современные</a></li>
+								<li><a href="#">Цветные (RAL, CS)</a></li>
+								<li><a href="#">Скрытые</a></li>
+								<li><a href="#">Входные</a></li>
+								<li><a href="#">Раздвижные</a></li>
+								<li><a href="#">Фурнитура</a></li>
+								<li><a href="#">Дверь-книжка</a></li>
+							</ul>
 						</div>
-						<ul class="menu_list two_col_list">
-							<li><a href="#">Гладкие</a></li>
-							<li><a href="#">Рото-дверь</a></li>
-							<li><a href="#">Классические</a></li>
-							<li><a href="#">Перегородки</a></li>
-							<li><a href="#">Современные</a></li>
-							<li><a href="#">Цветные (RAL, CS)</a></li>
-							<li><a href="#">Скрытые</a></li>
-							<li><a href="#">Входные</a></li>
-							<li><a href="#">Раздвижные</a></li>
-							<li><a href="#">Фурнитура</a></li>
-							<li><a href="#">Дверь-книжка</a></li>
-						</ul>
+					</div>
+					<div class="col">
+						<div class="dr_box">
+							<div>
+								<div class="title_link">Услуги<button type="button" class="dr_menu"></button></div>
+							</div>
+							<ul class="menu_list dr_list">
+								<li><a href="#">Замер</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Монтаж</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="col">
 						<div>
-							<a href="#" class="title_link">Услуги</a>
-						</div>
-						<ul class="menu_list">
-							<li><a href="#">Замер</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Монтаж</a></li>
-						</ul>
-					</div>
-					<div class="col">
-						<div>
-							<a href="#" class="title_link">Покупателю</a>
+							<div class="dr_box">
+								<a href="#" class="title_link">Покупателю</a>
+							</div>
 						</div>
 						<div>
-							<a href="#" class="title_link">Наши работы</a>
+							<div class="dr_box">
+								<a href="#" class="title_link">Наши работы</a>
+							</div>
 						</div>
 						<div>
-							<a href="#" class="title_link">Контакты</a>
+							<div class="dr_box">
+								<a href="#" class="title_link">Контакты</a>
+							</div>
 						</div>
 					</div>
 					<div class="col">
@@ -153,7 +198,7 @@
 						</div>
 						<ul class="soc_list soc_list_2">
 							<li>
-								<a href="#">
+								<a href="#" data-popup-link = "popup_1">
 									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve">
 									<path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"/>
 									</svg>
@@ -198,10 +243,12 @@
 		<!-- Section 1 - 404 Page -->
 
 		<section class="bg_404" style="background-image: url(img/bg_404.jpg)">
-			<div class="templ_404">
-				<h3>404!</h3>
-				<p>Страница не найдена или была перемещена!</p>
-				<a href="/" class="brown_pill">На главную</a>
+			<div class="row">
+				<div class="templ_404">
+					<h3>404!</h3>
+					<p>Страница не найдена или была перемещена!</p>
+					<a href="/" class="brown_pill">На главную</a>
+				</div>
 			</div>
 		</section>
 
@@ -229,6 +276,36 @@
 
 	</div>
 
+	<!-- Popup -->
+
+	<div class="popup popup_sect" data-popup = "popup_1">
+		<div class="popup_content">
+			<button type="button" class="close_popup"></button>
+			<div class="form_box form_box_2">
+				<div class="form_title">
+					<h3>Заказать звонок</h3>
+				</div>
+				<form>
+					<div class="input_wrapp">
+						<input type="text" placeholder="Ваше имя" />
+					</div>
+					<div class="input_wrapp">
+						<input type="text" placeholder="Телефон для связи" />
+					</div>
+					<div class="submit_wrapp">
+						<button type="button" class="brown_pill">Отправить заявку</button>
+					</div>
+				</form>
+				<div class="form_descript">
+					<p>Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных в соответсвии с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup_bg"></div>
+
+	<!-- Popup -->
+
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
@@ -238,7 +315,7 @@
 	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="js/scripts.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap" async defer></script>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU"></script>
 	<script src="js/map.js"></script>
 
 </body>
