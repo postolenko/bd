@@ -171,6 +171,14 @@
 
 	/*-- /Section 1 - Main Page --*/
 
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog_thumbs .product_thumb_2 {
+		width: calc(50% - 30px);
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -307,6 +315,70 @@
 
 	/*-- /Sect 1 - Card Page --*/
 
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog_templ {
+		display: block;
+	}
+
+	.catalog_templ > .left {
+	    max-width: 600px;
+	    width: 100%;
+	    padding-right: 0;
+	}
+
+	.catalog_templ > .right {
+	    width: 100%;
+	    padding-left: 0;
+	}
+
+	.catalog_thumbs .product_thumb_2 {
+	    width: calc(33.33% - 30px);
+	}
+
+	.sidebar_menu_list li > ul,
+	.sidebar_menu_list li:hover > ul {
+	    min-width: 100%;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    opacity: 1;
+	}
+
+	.sidebar_menu_list li > ul {
+		display: none;
+		padding-left: 15px;
+	}
+
+	.dr_btn_2 {
+		-webkit-transition-property: transform;
+	    -webkit-transition-duration: .3s;
+	    -webkit-transition-timing-function: ease;
+
+	    -moz-transition-property: transform;
+	    -moz-transition-duration: .3s;
+	    -moz-transition-timing-function: ease;
+
+	    -ms-transition-property: transform;
+	    -ms-transition-duration: .3s;
+	    -ms-transition-timing-function: ease;
+
+	    -o-transition-property: transform;
+	    -o-transition-duration: .3s;
+	    -o-transition-timing-function: ease;
+
+	    transition-property: transform;
+	    transition-duration: .3s;
+	    transition-timing-function: ease;
+	}
+
+	.dr_btn_2.active {
+		transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
 }
 
 
@@ -380,6 +452,14 @@
 	}
 
 	/*-- /Section 6 - Simple Page --*/
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog_thumbs .product_thumb_2 {
+	    width: calc(50% - 30px);
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
 
 }
 
@@ -750,6 +830,60 @@
 
 	/*-- /Sect 1 - Card Page --*/
 
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog_two_cols > .left {
+	    width: 50%;
+	}
+
+	.catalog_two_cols > .right {
+	    width: 50%;
+	}
+
+	.sort_list li a span {
+		display: none;
+	}
+
+	.h3_desk {
+		display: none;
+	}
+
+	.h3_resp {
+	    display: block;
+	}
+
+	.pagination_wrapp {
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+
+	.pagination_wrapp > div:nth-child(1) {
+		width: 100%;
+	    padding-right: 0;
+	}
+
+	.pagination_wrapp > div:nth-child(2) {
+		width: 100%;
+	    padding-left: 0;
+	    text-align: center;
+	}
+
+	.pagination {
+		min-width: 100%;
+	    margin: 0;
+	}
+
+	.resp_center {
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
+	.count_pages {
+	    text-align: center;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
 	/*-- Footer --*/
 
 	.footer_templ {
@@ -852,6 +986,56 @@
 
 	/*-- /Sect 1 - Card Page --*/
 
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog_thumbs {
+	    margin: 9px 0;
+	    justify-content: center;
+	    -webkit-justify-content: center;
+	}
+
+	.catalog_thumbs .product_thumb_2 {
+	    width: 100%;
+	}
+
+	.catalog_thumbs .product_thumb_2 {
+	    margin: 15px 0;
+	}
+
+	.catalog_two_cols > .left {
+	    width: 120px;
+	}
+
+	.catalog_two_cols > .right {
+	    width: calc(100% - 120px);
+	}
+
+	.sort_list li {
+	    padding: 0 3px;
+	}
+
+	.sort_wrapp {
+	    margin-top: 8px;
+	}
+
+	.search_input {
+	    width: calc(100% - 35px);
+	    height: 41px;
+	    line-height: 40px;
+	    padding: 0 15px 0 10px;
+	}
+
+	.search_btn {
+		width: 35px;
+		height: 41px;
+	}
+
+	.pagination li {
+	    padding: 0 5px;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -934,7 +1118,7 @@
 	/*-- /Section 6 - Simple Page --*/
 
 	/*-- Sect 1 - Card Page --*/
-	
+
 	.h2_wrapp_left {
 	    padding: 10px 0 7px 0;
 	}
@@ -1007,5 +1191,34 @@
 	}
 
 	/*-- /Sect 2 - Card Page --*/
+
+	/*-- Section 1 - Catalog Page --*/
+
+	.catalog_templ {
+	    padding-top: 9px;
+	}
+
+	.catalog_templ > .left {
+	    padding-bottom: 10px;
+	}
+
+	.pagination_wrapp {
+	    padding-bottom: 24px;
+	}
+
+	.catalog_descript {
+	    padding-bottom: 9px;
+	}
+
+	.catalog_descript p {
+	    font-size: 15px;
+	    line-height: 25px;
+	}
+
+	.sidebar_dropdown {
+	    margin-bottom: 7px;
+	}
+
+	/*-- /Section 1 - Catalog Page --*/
 
 }

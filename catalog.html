@@ -243,7 +243,8 @@
 		<div class="row">
 			<ul class="breadcrumbs">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Каталог дверей</a></li>
+				<li><a href="#">ALTO 2P Белый Эмалит</a></li>
 			</ul>
 		</div>
 	</div>
@@ -263,8 +264,8 @@
 				<div class="catalog_templ">
 					<div class="left">
 						<div class="sidebar">
-							<div class="sidebar_dropdown active dr_box">
-								<div class="sidebar_dropdown_btn brown dr_title">
+							<div class="sidebar_dropdown active dr_box_2">
+								<div class="sidebar_dropdown_btn brown dr_title_2">
 									<div>
 										<img class="sidebar_icon" src="img/burger.svg" alt="" /> 
 									</div>
@@ -272,7 +273,7 @@
 										<p>Категории товаров</p>
 									</div>
 								</div>
-								<div class="sidebar_dropdown_content dr_content">
+								<div class="sidebar_dropdown_content dr_content_2">
 									<ul class="sidebar_menu_list">
 										<li>
 											<a href="#"><span>Гладкие</span></a>
@@ -282,11 +283,12 @@
 										</li>
 										<li>
 											<a href="#" class="active"><span>Современные</span></a>
-											<!-- <ul>
+											<button type="button" class="dr_btn_2"></button>
+											<ul>
 												<li><a href="#">Пункт 1</a></li>
 												<li><a href="#">Пункт 2</a></li>
 												<li><a href="#">Пункт 3</a></li>
-											</ul> -->
+											</ul>
 										</li>
 										<li>
 											<a href="#"><span>Скрытые</span></a>
@@ -315,9 +317,8 @@
 									</ul>
 								</div>
 							</div>
-
-							<div class="sidebar_dropdown active dr_box">
-								<div class="sidebar_dropdown_btn green dr_title">
+							<div class="sidebar_dropdown active dr_box_2">
+								<div class="sidebar_dropdown_btn green dr_title_2">
 									<div>
 										<img class="sidebar_icon" src="img/filter.svg" alt="" /> 
 									</div>
@@ -325,13 +326,13 @@
 										<p>Фильтр товаров</p>
 									</div>
 								</div>
-								<div class="sidebar_dropdown_content dr_content">
+								<div class="sidebar_dropdown_content dr_content_2">
 									<div class="filters_wrapp">
-										<div class="filter_item dr_box active">
-											<div class="filter_item_title dr_title">
+										<div class="filter_item dr_box_2 active">
+											<div class="filter_item_title dr_title_2">
 												<h3>Цена товара (руб.)</h3>
 											</div>
-											<div class="filter_item_contet dr_content">
+											<div class="filter_item_contet dr_content_2">
 												<div class="range_sl_inputs">
 													<div>
 														<div class="input_wrap_2">
@@ -347,11 +348,11 @@
 												<div class="range_sl" id="range_sl"></div>
 											</div>
 										</div>
-										<div class="filter_item dr_box active">
-											<div class="filter_item_title dr_title">
+										<div class="filter_item dr_box_2 active">
+											<div class="filter_item_title dr_title_2">
 												<h3>Наличие</h3>
 											</div>
-											<div class="filter_item_contet dr_content">
+											<div class="filter_item_contet dr_content_2">
 												<div class="checkboxes_wrapp">
 													<div class="checkbox">
 														<label for="ch_1"><input type="checkbox" name="ch" id="ch_1" /><span>На складе</span></label>
@@ -362,11 +363,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="filter_item dr_box active">
-											<div class="filter_item_title dr_title">
+										<div class="filter_item dr_box_2 active">
+											<div class="filter_item_title dr_title_2">
 												<h3>Стиль</h3>
 											</div>
-											<div class="filter_item_contet dr_content">
+											<div class="filter_item_contet dr_content_2">
 												<div class="checkboxes_wrapp">
 													<div class="checkbox">
 														<label for="ch_3"><input type="checkbox" name="ch" id="ch_3" /><span>Классика</span></label>
@@ -388,7 +389,6 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 					<div class="right">
@@ -396,7 +396,8 @@
 							<div class="left">
 								<div class="sort_wrapp">
 									<div>
-										<h5>Сортировать по:</h5>
+										<h5 class="h3_desk">Сортировать по:</h5>
+										<h5 class="h3_resp">По цене:</h5>
 									</div>
 									<div>
 										<ul class="sort_list">
@@ -583,7 +584,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product_thumb product_thumb_2">
+							<!-- <div class="product_thumb product_thumb_2">
 								<div class="img_box">
 									<div class="product_tag green">На складе</div>
 									<div class="product_tag blue">Новинка</div>
@@ -1158,11 +1159,11 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="pagination_wrapp pagination_wrapp_2">
 							<div>
-								<ul class="pagination">
+								<ul class="pagination resp_center">
 									<li><a href="#"><img class="left_green_arrow" src="img/left_green_arrow.png" alt="" /></a></li>
 									<li><a href="#">1</a></li>
 									<li><a href="#">2</a></li>
@@ -1233,6 +1234,70 @@
 	<!-- /Footer -->
 
 	</div>
+
+		<!-- Popup -->
+
+	<div class="popup popup_sect" data-popup = "popup_1">
+		<div class="popup_content">
+			<button type="button" class="close_popup"></button>
+			<div class="form_box form_box_2">
+				<div class="form_title">
+					<h3>Заказать звонок</h3>
+				</div>
+				<form>
+					<div class="input_wrapp">
+						<input type="text" placeholder="Ваше имя" />
+					</div>
+					<div class="input_wrapp">
+						<input type="text" placeholder="Телефон для связи" />
+					</div>
+					<div class="submit_wrapp">
+						<button type="button" class="brown_pill">Отправить заявку</button>
+					</div>
+				</form>
+				<div class="form_descript">
+					<p>Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных в соответсвии с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup popup_sect" data-popup = "popup_2">
+		<div class="popup_content">
+			<button type="button" class="close_popup"></button>
+			<div class="form_box form_box_2">
+				<div class="form_title">
+					<h3>Заявки на расчет</h3>
+				</div>
+				<form>
+					<div class="input_wrapp">
+						<input type="text" placeholder="Ваше имя" />
+					</div>
+					<div class="input_wrapp">
+						<input type="text" placeholder="Телефон для связи" />
+					</div>
+					<div class="count_box_wrapp">
+						<h5>Количество (шт.):</h5>
+						<div class="count_box">
+							<button type="button" class="minus_btn"></button>
+							<input type="number" value="1">
+							<button type="button" class="plus_btn"></button>
+						</div>
+					</div>
+					<div class="submit_wrapp">
+						<button type="button" class="brown_pill">Отправить заявку</button>
+					</div>
+				</form>
+				<div class="form_descript">
+					<p>Нажимая на кнопку “Отправить”, Вы даете согласие на обработку персональных данных в соответсвии с <a href="#">политикой конфиденциальности</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup_bg"></div>
+
+	<!-- Popup -->
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
