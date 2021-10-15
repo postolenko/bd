@@ -35,6 +35,14 @@ function getSidebarItemsParams() {
   }
 }
 
+function getAnimation() {
+  $(".animate").each(function() {
+    if( $(this).offset().top <= $(document).scrollTop() + $(window).height() ) {
+      $(this).addClass("active");
+    }
+  });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -49,9 +57,11 @@ $(window).resize(function() {
     getRespSlider();
     getWrapperPadding();
     getSidebarItemsParams();
+    getAnimation();
 });
 
 $(document).scroll(function() {
+    getAnimation();
 });
 
 $(document).ready(function() {
@@ -59,6 +69,7 @@ $(document).ready(function() {
     getRespSlider();
     getWrapperPadding();
     getSidebarItemsParams();
+    getAnimation();
 
     if( $(".promo_slider").length > 0 ) {
         $(".promo_slider").not(".slick-initialized").slick({
