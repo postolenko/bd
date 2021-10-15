@@ -7,3 +7,6 @@
 # http://postolenko.github.io/bd/search_res.html
 # http://postolenko.github.io/bd/card.html
 # http://postolenko.github.io/bd/thanks.html
+# http://postolenko.github.io/bd/for_clients.html
+# http://postolenko.github.io/bd/montagh.html
+# http://postolenko.github.io/bd/zamer.html
