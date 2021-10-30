@@ -52,9 +52,7 @@ function getAnimation() {
 function setFilterHeight() {
   $(".sidebar_dropdown").each(function() {
     if($(this).hasClass("active")) {
-      $(this).find(".sidebar_dropdown_content").css({
-      "display" : "block !important"
-    });
+      $(this).find(".sidebar_dropdown_content").attr("style", "");
     }
   });
   // if($(".sidebar_dropdown").hasClass("active")) {
