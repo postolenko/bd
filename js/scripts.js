@@ -262,22 +262,22 @@ $(document).ready(function() {
     }
   });
 
-
-  $(".dr_box_2.active").find(".dr_content_2").css({
-    "display" : "block"
-  });
+  // $(".dr_box_2.active").children(".dr_content_2").css({
+  //   "display" : "block"
+  // });
 
   $(".dr_title_2").on("click", function(e) {
     e.preventDefault();
     parent = $(this).closest(".dr_box_2");
     dr = parent.children(".dr_content_2");
-    if(dr.is(":hidden")){
-      // dr.slideDown(300);
-      parent.addClass("active");
-    } else {
-      // dr.slideUp(300);
-      parent.removeClass("active");
-    }
+    parent.toggleClass("active");
+    // if(dr.is(":hidden")){
+    //   // dr.slideDown(300);
+    //   parent.addClass("active");
+    // } else {
+    //   // dr.slideUp(300);
+    //   parent.removeClass("active");
+    // }
   });
 
   // -----------
