@@ -36,10 +36,6 @@ function getSidebarItemsParams() {
   if(bodyWidth <= 1024 && resizeflag == false) {
     $(".sidebar_dropdown").removeClass("active");
     resizeflag = true;
-    // $(".sidebar_dropdown_content").css({
-    //   "display" : "none"
-    // });
-    // $(".sidebar_dropdown_content").attr("style", "");
   } else if(bodyWidth > 1024) {
     resizeflag = false;
   }
@@ -51,33 +47,6 @@ function getAnimation() {
       $(this).addClass("active");
     }
   });
-}
-
-function setFilterHeight() {
-  // $(".sidebar_dropdown").each(function() {
-  //   if($(this).hasClass("active")) {
-  //     $(this).find(".sidebar_dropdown_content").attr("style", "");
-  //   }
-  // });
-
-  // $(".sidebar_dropdown").each(function() {
-  //   if($(this).hasClass("active")) {
-  //     $(this).find(".sidebar_dropdown_content").css({
-  //       "display" : "block"
-  //     });
-  //   }
-  // });
-
-  // if($(".sidebar_dropdown").hasClass("active")) {
-  //   $(".sidebar_dropdown").css({
-  //     "display" : "block !important"
-  //   });
-    // setTimeout(function() {
-    //   $(".sidebar_dropdown").css({
-    //     "display" : "block"
-    //   });
-    // }, 300);
-  // }
 }
 
 var w = window,
@@ -103,14 +72,6 @@ $(window).resize(function() {
 
 $(document).scroll(function() {
     getAnimation();
-    // setFilterHeight();
-
-    // if (($(window).innerHeight() + $(window).scrollTop()) >= $("body").height()) {
-    //     $(".dr_box_2.active").children(".dr_content_2").css({
-    //       "display" : "block"
-    //     });
-    // }
-
 });
 
 $(document).ready(function() {
@@ -274,28 +235,16 @@ $(document).ready(function() {
     }
   });
 
-  // $(".dr_box_2.active").children(".dr_content_2").css({
-  //   "display" : "block"
-  // });
-
   $(".dr_title_2").on("click", function(e) {
     e.preventDefault();
     parent = $(this).closest(".dr_box_2");
     dr = parent.children(".dr_content_2");
-    // parent.toggleClass("active");
     if(parent.hasClass("active")) {
       parent.removeClass("active");
       dr.attr("style", "");
     } else {
       parent.addClass("active");
     }
-    // if(dr.is(":hidden")){
-    //   // dr.slideDown(300);
-    //   parent.addClass("active");
-    // } else {
-    //   // dr.slideUp(300);
-    //   parent.removeClass("active");
-    // }
   });
 
   // -----------
