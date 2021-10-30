@@ -33,12 +33,15 @@ function getWrapperPadding() {
 }
 
 function getSidebarItemsParams() {
-  if(bodyWidth <= 1024) {
-    // $(".sidebar_dropdown").removeClass("active");
+  if(bodyWidth <= 1024 && resizeflag == false) {
+    $(".sidebar_dropdown").removeClass("active");
+    resizeflag = true;
     // $(".sidebar_dropdown_content").css({
     //   "display" : "none"
     // });
     // $(".sidebar_dropdown_content").attr("style", "");
+  } else if(bodyWidth > 1024) {
+    resizeflag = false;
   }
 }
 
@@ -82,6 +85,8 @@ d = document,
 e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+var resizeflag = false;
 
 $(window).load(function() {
 });
