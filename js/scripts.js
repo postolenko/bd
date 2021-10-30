@@ -53,6 +53,11 @@ function setFilterHeight() {
   $(".sidebar_dropdown").each(function() {
     if($(this).hasClass("active")) {
       $(this).find(".sidebar_dropdown_content").attr("style", "");
+      setTimeout(function() {
+        $(this).find(".sidebar_dropdown_content").css({
+          "display" : "block"
+        });
+      }, 300);
     }
   });
   // if($(".sidebar_dropdown").hasClass("active")) {
