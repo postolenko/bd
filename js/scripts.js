@@ -50,19 +50,19 @@ function getAnimation() {
 }
 
 function setFilterHeight() {
-  $(".sidebar_dropdown").each(function() {
-    if($(this).hasClass("active")) {
-      $(this).find(".sidebar_dropdown_content").attr("style", "");
-    }
-  });
+  // $(".sidebar_dropdown").each(function() {
+  //   if($(this).hasClass("active")) {
+  //     $(this).find(".sidebar_dropdown_content").attr("style", "");
+  //   }
+  // });
 
-  $(".sidebar_dropdown").each(function() {
-    if($(this).hasClass("active")) {
-      $(this).find(".sidebar_dropdown_content").css({
-        "display" : "block"
-      });
-    }
-  });
+  // $(".sidebar_dropdown").each(function() {
+  //   if($(this).hasClass("active")) {
+  //     $(this).find(".sidebar_dropdown_content").css({
+  //       "display" : "block"
+  //     });
+  //   }
+  // });
 
   // if($(".sidebar_dropdown").hasClass("active")) {
   //   $(".sidebar_dropdown").css({

@@ -3017,7 +3017,7 @@ ul.num_list li .num {
 }
 
 .sidebar_dropdown_content {
-    display: none !important;
+    display: none;
     padding: 0 13px;
     background-color: #fdfdfd;
     border-left: 1px solid #f7f7f7;
