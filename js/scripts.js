@@ -93,12 +93,19 @@ $(window).resize(function() {
     getSidebarItemsParams();
     getAnimation();
     resetStyles();
-    setFilterHeight();
+    // setFilterHeight();
 });
 
 $(document).scroll(function() {
     getAnimation();
-    setFilterHeight();
+    // setFilterHeight();
+
+    if (($(window).innerHeight() + $(window).scrollTop()) >= $("body").height()) {
+        $(".dr_box_2.active").children(".dr_content_2").css({
+          "display" : "block"
+        });
+    }
+
 });
 
 $(document).ready(function() {
