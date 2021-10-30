@@ -54,11 +54,11 @@ function setFilterHeight() {
     $(".sidebar_dropdown").css({
       "display" : "block !important"
     });
-    setTimeoit(function() {
-      $(".sidebar_dropdown").css({
-        "display" : "block"
-      });
-    }, 300);
+    // setTimeoit(function() {
+    //   $(".sidebar_dropdown").css({
+    //     "display" : "block"
+    //   });
+    // }, 300);
   }
 }
 
