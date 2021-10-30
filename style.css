@@ -3017,7 +3017,7 @@ ul.num_list li .num {
 }
 
 .sidebar_dropdown_content {
-    display: none;
+    display: none !important;
     padding: 0 13px;
     background-color: #fdfdfd;
     border-left: 1px solid #f7f7f7;
@@ -3230,6 +3230,11 @@ ul.num_list li .num {
 .filter_item {
     border-bottom: 1px solid #f4f4f4;
     padding: 0 7px 3px 7px;
+}
+
+.filter_item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .filter_item_title {
