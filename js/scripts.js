@@ -34,11 +34,11 @@ function getWrapperPadding() {
 
 function getSidebarItemsParams() {
   if(bodyWidth <= 1024) {
-    $(".sidebar_dropdown").removeClass("active");
+    // $(".sidebar_dropdown").removeClass("active");
     // $(".sidebar_dropdown_content").css({
     //   "display" : "none"
     // });
-    $(".sidebar_dropdown_content").attr("style", "");
+    // $(".sidebar_dropdown_content").attr("style", "");
   }
 }
 
