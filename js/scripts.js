@@ -50,16 +50,23 @@ function getAnimation() {
 }
 
 function setFilterHeight() {
-  if($(".sidebar_dropdown").hasClass("active")) {
-    $(".sidebar_dropdown").css({
+  $(".sidebar_dropdown").each(function() {
+    if($(this).hasClass("active")) {
+      $(this).find(".sidebar_dropdown_content").css({
       "display" : "block !important"
     });
+    }
+  });
+  // if($(".sidebar_dropdown").hasClass("active")) {
+  //   $(".sidebar_dropdown").css({
+  //     "display" : "block !important"
+  //   });
     // setTimeout(function() {
     //   $(".sidebar_dropdown").css({
     //     "display" : "block"
     //   });
     // }, 300);
-  }
+  // }
 }
 
 var w = window,
