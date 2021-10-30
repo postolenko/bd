@@ -102,7 +102,7 @@ $(document).scroll(function() {
 
     if (($(window).innerHeight() + $(window).scrollTop()) >= $("body").height()) {
         $(".dr_box_2.active").children(".dr_content_2").css({
-          "display" : "block"
+          "height" : "auto"
         });
     }
 
